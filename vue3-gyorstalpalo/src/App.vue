@@ -1,27 +1,40 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
+  import Welcome from './components/Welcome.vue';
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="../public/favicon.jpg" class="logo" alt="AL logo" />
-    </a>
-  </div>
-  <HelloWorld msg="Nagyi" />
+  <header></header>
+  <main>
+    <Welcome />
+  </main>
+  <footer></footer>
 </template>
 
-<style scoped>
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+:root {
+--blue:#576ca8;
+--inputBg:#444b67;
+--cr1:#c94277;
+--cr2:#1b998b;
+--cr3:#ffd046;
+
 }
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
+body {
+  background-color: #302b27;
+  color: #fff;
 }
-.logo.vue:hover {
-  filter: drop-shadow(0 0 2em #42b883aa);
+#app {
+  font-family: Quicksand, sans-serif;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.df{
+  display: flex;
 }
 </style>
