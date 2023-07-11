@@ -21,12 +21,17 @@
 --cr3:#ffd046;
 
 }
+
 body {
   background-color: #302b27;
   color: #fff;
 }
 #app {
   font-family: Quicksand, sans-serif;
+}
+
+main{
+  padding: 0.5rem;
 }
 * {
   margin: 0;
@@ -36,5 +41,6 @@ body {
 
 .df{
   display: flex;
+  gap: 1rem;
 }
 </style>
